@@ -2,6 +2,7 @@
 from tkinter import *
 root = Tk()
 root.title("Simple Calculator")
+root.configure(bg="grey")
 global_list = []
 def display0():
     listbox.insert(END,"0")
@@ -107,20 +108,20 @@ def display_clear():
 
 
 
-button0 = Button(root, text="0", padx=25,pady=20, command=display0)
-button1 = Button(root, text="1" ,padx=25,pady=20, command=display1)
-button2 = Button(root, text="2", padx=25,pady=20, command=display2)
-button3 = Button(root, text="3", padx=25,pady=20, command=display3)
-button4 = Button(root, text="4", padx=25,pady=20, command=display4)
-button5 = Button(root, text="5", padx=25,pady=20, command=display5)
-button6 = Button(root, text="6", padx=25,pady=20, command=display6)
-button7 = Button(root, text="7", padx=25,pady=20, command=display7)
-button8 = Button(root, text="8", padx=25,pady=20, command=display8)
-button9 = Button(root, text="9", padx=25,pady=20, command=display9)
-button_add = Button(root, text="+", padx=25,pady=20, command=display_add)
-button_subtract = Button(root, text="-", padx=25,pady=20, command=display_subtract)
-button_divide = Button(root, text="÷", padx=25,pady=20, command=display_divide)
-button_multiply = Button(root, text="x", padx=25,pady=20, command=display_multiply)
+button0 = Button(root, text="0", padx=25,pady=20, command=display0,bg="#616569",fg="white")
+button1 = Button(root, text="1" ,padx=25,pady=20, command=display1,bg="#616569",fg="white")
+button2 = Button(root, text="2", padx=25,pady=20, command=display2,bg="#616569",fg="white")
+button3 = Button(root, text="3", padx=25,pady=20, command=display3,bg="#616569",fg="white")
+button4 = Button(root, text="4", padx=25,pady=20, command=display4,bg="#616569",fg="white")
+button5 = Button(root, text="5", padx=25,pady=20, command=display5,bg="#616569",fg="white")
+button6 = Button(root, text="6", padx=25,pady=20, command=display6,bg="#616569",fg="white")
+button7 = Button(root, text="7", padx=25,pady=20, command=display7,bg="#616569",fg="white")
+button8 = Button(root, text="8", padx=25,pady=20, command=display8,bg="#616569",fg="white")
+button9 = Button(root, text="9", padx=25,pady=20, command=display9,bg="#616569",fg="white")
+button_add = Button(root, text="+", padx=25,pady=20, command=display_add, bg="#FFB20F",fg="white")
+button_subtract = Button(root, text="-", padx=25,pady=20, command=display_subtract, bg="#FFB20F",fg="white")
+button_divide = Button(root, text="÷", padx=25,pady=20, command=display_divide, bg="#FFB20F",fg="white")
+button_multiply = Button(root, text="x", padx=25,pady=20, command=display_multiply, bg="#FFB20F",fg="white")
 button_result = Button(root, text="=", padx=25,pady=20, command=display_result)
 button_clear = Button(root, text='C', padx=25,pady=20, command=display_clear)
 button0.grid(row=4, column=0)
@@ -139,7 +140,7 @@ button_multiply.grid(row=3, column=3)
 button_divide.grid(row=4, column=3)
 button_result.grid(row=4, column=1)
 button_clear.grid(row=4, column=2)
-listbox = Entry(root, width=35, borderwidth=3)
+listbox = Entry(root, width=35, borderwidth=3, bg="black",fg="white")
 listbox.grid(row=0,column=0, columnspan=4)
 
 
